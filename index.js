@@ -26,7 +26,7 @@ app.post("/api/contact", (req, res) => {
   // Email options
   const mailOptions = {
     from: email,
-    to: "arunkarthik0710@gmail.com",
+    to: process.env.RECIEVE_EMAIL,
     subject: `Contact Form Submission: ${subject}`,
     html: `
     <div style="font-family: Arial, sans-serif; margin: 20px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px; background-color: #f9f9f9;">
